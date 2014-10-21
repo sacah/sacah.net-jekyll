@@ -10,6 +10,9 @@ layout: default
             
         </header>
         {{ post.content | split: '~~~fold~~~' | first }}
+        {% if post.content contains '~~~fold~~~' %}
+            <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+        {% endif %}
         <footer>
             <span>{{ post.date | date: "%b %-d, %Y" }}</span>
             {% for tag in post.tags %}<a href="tag/{{ tag }}">{{ tag | upcase }}</a>{% endfor %}
