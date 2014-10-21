@@ -10,7 +10,7 @@ layout: default
         </p>
     </header>
 
-    {{ content }}
+    {{ content | replace: '~~~fold~~~' }}
     
     <footer>
         <div id="disqus_thread"></div>
