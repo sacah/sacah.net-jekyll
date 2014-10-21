@@ -1,0 +1,14 @@
+---
+layout: post
+title: TimeZones with Javascript
+date: '2013-02-11T11:00:00.001+10:00'
+author: sacah
+tags:
+- javascript
+- programming
+modified_time: '2013-02-22T14:27:36.235+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-2768765529178700261
+blogger_orig_url: http://www.sacah.net/2013/02/timezones-with-javascript.html
+---
+
+So I originally wanted to make a TimeZone selector similar to most OSes, you know, the world map with cities visible and you can select the one in your time zone. The thing I didn't want to do with this was all the work of building and maintaining a DB of cities and their GMT offset along with daylight saving rules.<br /><br />So I looked around and found a time zone database, now hosted at http://www.iana.org/time-zones. I downloaded these and started writing my JS library to parse the list and generate the rules for all the time zone info. And thus <a href="https://bitbucket.org/sacah/jstimezone">jsTimeZone</a> was born.<br /><br />With this library it allows you to find the date/time in a time zone similar to most BE languages, so using 'Australia/Sydney', or 'Europe/London'. Being FE based, it will calculate based on the machines local date/time, so as long as it's accurate, this library should get the right result.<br /><br />The added benefit to using this is when I go to make the map, I can just scan through the time zone info and I'll have city name and country all ready to look up GPS coordinates for and plot on my map. Though this one I'll generate once and include a static file in the repo to be used, along with a generation script in case new time zones popup down the track.<br /><br />I have only tested a few of the more common time zones I use, let me know if any places don't return the right result.<br /><br />You can also export the tz database from the module and use the returned JSON string when calling the module again.<br /><br />Quick example of using this module<br /><blockquote><pre>function queryTime() {<br />    var ausSyd=jsTZAll.offsetIn('Australia/Sydney');<br />    console.log('Aus - Syd: %o', ausSyd.getOffset());<br />    console.log('Aus - Syd: %o', ausSyd.date());<br />}<br /><br />var jsTZAll=jsTimeZones('australasia', 'europe');<br />jsTZAll.init(queryTime);<br /></pre></blockquote>Which will return<br /><blockquote><pre><br />Aus - Syd: { hr: 11, min: 0}<br />Aus - Syd: Date {Fri Feb 22 2013 15:06:59 GMT+1100 (AUS Eastern Daylight Time)}<br /></pre></blockquote><br />To see more, head over to the Bitbucket repo at <a href="https://bitbucket.org/sacah/jstimezone">jsTimeZone</a>.

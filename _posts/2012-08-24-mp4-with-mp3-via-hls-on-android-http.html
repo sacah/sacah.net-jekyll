@@ -1,0 +1,12 @@
+---
+layout: post
+title: MP4 with MP3 via HLS on Android - HTTP Live Streaming
+date: '2012-08-24T12:56:00.000+10:00'
+author: sacah
+tags: 
+modified_time: '2012-08-24T13:00:21.332+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-250925681804315925
+blogger_orig_url: http://www.sacah.net/2012/08/mp4-with-mp3-via-hls-on-android-http.html
+---
+
+<p>If you have a MP4 with a AAC audio stream, both iOS and Android play it fine via the HTML5 Audio player over HLS. But if you use a MP4 with a MP3 audio stream, iOS plays fine, but Android won't play.</p> <p>Turns out Android only plays as long as there is a video stream, so we need to create a video stream to go with our audio. The easiest method of this is with ffmpeg.</p> <p>1. Create a blank 32x32 image, flat white, or black or any other color, I called mine image.jpg.</p> <p>2. Create a looping video the length of the audio, or longer than the longest MP3 you'll be using. <blockquote>ffmpeg -loop 1 -i image.jpg -vcodec libx264 -vprofile baseline -level 3 -t 360 loopVideo.mp4</blockquote>This will loop the image.jpg for 360 seconds, and save the output as a H.264 video stream called loopVideo.mp4. The video is created at Baseline 3, so this will work on iOS 3+ devices.</p> <p>3. Combine the MP3 with the loopVideo.mp4 <blockquote>ffmpeg -i loopVideo.mp4 -i "My MP3 Song.mp3" -c copy -map 0:v -map 1:a:0 -vprofile baseline -level 3 -shortest finalSong.mp4</blockquote>This combines the video with the audio, it is a straight copy from both video and audio, so it occurs in 30ms or so. -shortest tells ffmpeg to clip the streams at the shortest one. If you made the video longer than all your MP3s, ffmpeg will clip the video stream to the length of the MP3 you're using.</p> <p>Now your right to stream this via HLS onto Android. Let me know if you have any issues with this, or find better methods.</p>

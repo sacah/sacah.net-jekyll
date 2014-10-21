@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+        <div class="pageWrapper">
+            <div class="contentWrapper">
+                {% include header.html %}
+                {{ content }}
+            </div>
+            <div class="shadowBox"></div>
+            <div class="hideShadowBox"></div>
+        </div>
+        
+        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    </body>
+
+</html>

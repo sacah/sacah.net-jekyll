@@ -1,0 +1,16 @@
+---
+layout: post
+title: ! 'Firefox 9.0.1 Error: uncaught exception: TypeError: args.shift() is null'
+date: '2012-01-16T11:19:00.001+10:00'
+author: sacah
+tags:
+- javascript
+- software
+- fixes
+- programming
+modified_time: '2012-02-02T11:10:07.240+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-2044763637701090775
+blogger_orig_url: http://www.sacah.net/2012/01/firefox-901-error-uncaught-exception.html
+---
+
+So looking at a site we're developing this morning in FF 9.0.1 and some pages didn't work on some peoples machines, though worked fine on mine. After installing Firebug to see what was going on the pages would work fine.<br /><br />I uninstalled Firebug and looked at the Firefox Error Console to find the following error.<br /><b>Error: uncaught exception: TypeError: args.shift() is null</b><br /><b><br /></b><br />Was a weird one, after much poking around I found it's a poor handling of arguments supplied to console.log, hopefully this is a bug in FF9.0.1 and will be corrected in the next release. For now to quickly get things working I've just extended my console.log handler to set console.log=function() {} to cancel console.log functionality until it's fixed.<br /><br />If it's not addressed in future versions I'll have to look into it further to detect if Firebug isn't active and do some alternate handling for development.<br /><br />To work around this I've changed my code to this<br /><pre>if(window.location.search!='?debug=1') {<br />  top.console.log=function() { }<br />}</pre><br />Now I just add ?debug=1 to URL and it uses built in console log so I can manage when it comes on.<br /><br />Hope this helps, if you have further info please leave a comment.

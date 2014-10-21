@@ -1,0 +1,12 @@
+---
+layout: post
+title: IE8 Facebook Login - "Object doesn't support this property or method" in all.js
+date: '2012-02-13T12:19:00.004+10:00'
+author: sacah
+tags: 
+modified_time: '2012-02-13T12:19:35.485+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-8130197542828006493
+blogger_orig_url: http://www.sacah.net/2012/02/ie8-facebook-login-object-doesnt.html
+---
+
+So doing some more work on Facebook integration, we were posting to facebook.com/dialog/oauth/ and when it redirected back all.js was throwing an error 'Object doesn't support this property or method' at this line response={authResponse:FB._authResponse,status:FB._userStatus};<br /><br />I couldn't find anywhere in all.js where it defined response, so a quick hack I added<br /><br /><pre>var response={};</pre><br /><br />This solved the issue for me, hope this helps. If you know anything more leave a comment.

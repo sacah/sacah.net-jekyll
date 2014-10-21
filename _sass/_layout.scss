@@ -1,0 +1,83 @@
+/**
+ * Wrapper
+ */
+.pageWrapper {
+    @extend %clearfix;
+}
+
+.contentWrapper {
+}
+
+@media screen and (min-width: $on-slim) {
+    .pageWrapper { 
+        max-width: 750px; 
+        min-width: 600px; 
+        margin: 0 auto; 
+        overflow: hidden; 
+        padding-left: 100px; 
+        position: relative; 
+    }
+    .contentWrapper { 
+        max-width: 940px; 
+        min-width: 600px;
+    }
+    .siteHeader {
+        border: none;
+        
+        H1 {
+            background: none;
+            font-size: 1.5em;
+
+            
+            A, A:hover {
+                color: $text-color;
+            }
+        }
+    }
+
+    .postList {        
+        ARTICLE {
+            max-width: 720px; 
+            position: relative; 
+            margin-bottom: 60px;
+
+            HEADER {
+                P {
+
+                }
+            }
+
+            FOOTER {
+                SPAN {
+                    margin-left: -111px; 
+                    width: 60px; 
+                    padding: 6px 10px 6px 6px; 
+                    top: 0; 
+                    position: absolute; 
+                    color: $background-color;
+                    background: $brand-color; 
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    .shadowBox { 
+        width: 5px;
+        margin-bottom: -99999px; 
+        padding-bottom: 99999px; 
+        position: absolute; 
+        top: 0; 
+        -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    .hideShadowBox {
+        width: 15px;
+        position: absolute;
+        top: 0;
+        margin-bottom: -99999px; 
+        padding-bottom: 99999px; 
+        margin-left: 0px;
+        background: $background-color;
+    }
+}

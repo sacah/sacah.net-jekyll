@@ -1,0 +1,13 @@
+# Site settings
+title: sacah.net
+email: sacah@sacah.net
+description: > # this means to ignore newlines until "baseurl:"
+  A dumping ground for things that interest me
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://sacah.net" # the base hostname & protocol for your site
+twitter_username: sacahnet
+github_username:  sacah
+
+# Build settings
+markdown: kramdown
+paginate: 10
