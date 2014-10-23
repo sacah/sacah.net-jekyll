@@ -11,3 +11,35 @@ github_username:  sacah
 # Build settings
 markdown: kramdown
 paginate: 10
+picture:
+  source: "img"
+  output: "generated"
+  markup: "picture"
+  presets:
+    default:
+      attr:
+        class: "post-img"
+      source_default:
+        width: "360"
+        height: "771"
+      source_720:
+        width: "720"
+        media: "(min-device-pixel-ratio: 1.5)"
+      source_430:
+        width: "430"
+        media: "(min-width: 360px)"
+      source_860:
+        width: "860"
+        media: "(min-width: 360px) and (min-device-pixel-ratio: 1.5)"
+      source_500:
+        width: "500"
+        media: "(min-width: 430px)"
+      source_1000:
+        width: "1000"
+        media: "(min-width: 430px) and (min-device-pixel-ratio: 1.5)"
+      source_640:
+        width: "640"
+        media: "(min-width: 500px)"
+      source_1280:
+        width: "1280"
+        media: "(min-width: 500px) and (min-device-pixel-ratio: 1.5)"
