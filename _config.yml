@@ -20,26 +20,31 @@ picture:
       attr:
         class: "post-img"
       source_default:
-        width: "360"
-        height: "771"
-      source_720:
-        width: "720"
-        media: "(min-device-pixel-ratio: 1.5)"
-      source_430:
-        width: "430"
-        media: "(min-width: 360px)"
-      source_860:
-        width: "860"
-        media: "(min-width: 360px) and (min-device-pixel-ratio: 1.5)"
+        width: "300"
+      source_600:
+        width: "600"
+        media: "(min-width: 230px) and (max-width: 430px) and (min-device-pixel-ratio: 1.5)"
       source_500:
         width: "500"
-        media: "(min-width: 430px)"
+        media: "(min-width: 430px) and (max-width: 830px)"
       source_1000:
         width: "1000"
-        media: "(min-width: 430px) and (min-device-pixel-ratio: 1.5)"
-      source_640:
-        width: "640"
-        media: "(min-width: 500px)"
+        media: "(min-width: 430px) and (max-width: 830px) and (min-device-pixel-ratio: 1.5)"
+      source_900:
+        width: "900"
+        media: "(min-width: 830px) and (max-width: 1200px)"
+      source_1800:
+        width: "900"
+        media: "(min-width: 830px) and (max-width: 1200px) and (min-device-pixel-ratio: 1.5)"
       source_1280:
         width: "1280"
-        media: "(min-width: 500px) and (min-device-pixel-ratio: 1.5)"
+        media: "(min-width: 1200px) and (max-width: 1600px)"
+      source_2560:
+        width: "1280"
+        media: "(min-width: 1200px) and (max-width: 1600px) and (min-device-pixel-ratio: 1.5)"
+      source_1680:
+        width: "1680"
+        media: "(min-width: 1600px)"
+      source_3360:
+        width: "1680"
+        media: "(min-width: 1600px) and (min-device-pixel-ratio: 1.5)"
