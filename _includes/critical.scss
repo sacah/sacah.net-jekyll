@@ -10,6 +10,10 @@ BODY {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+}
+
+UL, LI, BODY, H1 {
+    margin: 0;
     padding: 0;
 }
 
@@ -32,8 +36,8 @@ A {
     margin-bottom: $spacing-unit;
     
     * {
-        display: inline-block;
         margin: 0;
+        padding: 0;
     }
     H1 {
         background-color: $text-color;
@@ -50,12 +54,10 @@ A {
         }
     }
     NAV {
-        min-width: 200px;
+        padding: $spacing-unit /2 $spacing-unit;
         
-        UL {
-            margin-left: $spacing-unit;
-        }
         LI {
+            display: inline-block;
             margin-right: $spacing-unit;
             font-weight: bold;
             font-size: 1.5em;
@@ -75,7 +77,6 @@ A {
             H1 {
                 font-size: 1.5em;
                 line-height: $base-line-height * 0.8;
-                margin: 0;
             }
         }
         FOOTER {
@@ -92,9 +93,10 @@ A {
             SPAN {
                 float: left;
             }
+            .author A {
+                float: left;
+            }
             UL {
-                margin: 0;
-                padding: 0;
                 display: inline;
                 list-style: none;
             }

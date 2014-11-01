@@ -1,0 +1,12 @@
+<span class="date">
+    <span class="onSlim">Posted on&nbsp;</span>
+    {{ post.date | date: "%b %-d, %Y" }}
+</span>
+<span class="author">
+    <span class="onSlim">&nbsp;by&nbsp;</span>
+    <a href="/tag/{{ post.author }}">{{ post.author }}</a>
+    <span class="onSlim">.</span>
+</span>
+{% if post.tags %}<span class="onSlim">&nbsp;Tagged:&nbsp;</span><ul>{% endif %}
+{% for tag in post.tags %}<li><a href="/tag/{{ tag }}">{{ tag | upcase }}</a></li>{% endfor %}
+{% if post.tags %}</ul>{% endif %}
