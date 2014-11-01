@@ -14,7 +14,9 @@ layout: default
             <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
         {% endif %}
         <footer>
-            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="date"><span class="onSlim">Posted on </span>{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="author"><span class="onSlim">by </span><a href="tag/{{ post.author }}">{{ post.author }}</a>.</span>
+            {% if post.tags %}<span class="onSlim"> Tagged: </span>{% endif %}
             {% for tag in post.tags %}<a href="tag/{{ tag }}">{{ tag | upcase }}</a>{% endfor %}
         </footer>
     </article>

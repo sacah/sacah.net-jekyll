@@ -9,6 +9,9 @@
 }
 
 @media screen and (min-width: $on-slim) {
+    .onSlim {
+        display: none;
+    }
     .pageWrapper { 
         max-width: 750px; 
         min-width: 600px; 
@@ -52,11 +55,27 @@
                     margin-left: -111px; 
                     width: 60px; 
                     padding: 6px 10px 6px 6px; 
-                    top: 0; 
                     position: absolute; 
+                    font-size: 1.5em;
+                }
+                .date {
+                    top: 0; 
                     color: $background-color;
                     background: $brand-color; 
-                    font-size: 1.5em;
+                    border-top-left-radius: 10px;
+                    border-bottom: dashed #FFF 1px;
+                }
+                .author {
+                    bottom: 0;
+                    color: $background-color;
+                    background: $highlight-color;
+                    border-bottom-left-radius: 10px;
+                    border-top: dashed #FFF 1px;
+                                        
+                    A, A:visited {
+                        text-decoration: underline;
+                        color: $background-color;
+                    }
                 }
             }
         }
