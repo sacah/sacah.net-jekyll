@@ -27,10 +27,13 @@
     .siteHeader {
         border: none;
         
+        NAV, H1 {
+            display: inline-block;
+        }
+        
         H1 {
             background: none;
             font-size: 1.5em;
-
             
             A, A:hover {
                 color: $text-color;

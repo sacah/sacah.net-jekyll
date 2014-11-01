@@ -2,7 +2,7 @@
 layout: post
 title: Linux Batch Thumbnail Creation of folder with subdirectories
 date: '2014-04-13T12:36:00.000+10:00'
-author: adrian
+author: sacah
 tags:
 - bash
 - programming
@@ -10,7 +10,7 @@ tags:
 - raspberry pi
 - linux
 - hack
-- adrian
+- sacah
 modified_time: '2014-04-13T12:41:13.928+10:00'
 blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-592268148388679244
 blogger_orig_url: http://www.sacah.net/2014/04/linux-batch-thumbnail-creation-of.html
