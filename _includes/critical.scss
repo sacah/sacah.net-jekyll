@@ -31,6 +31,10 @@ A {
     }
 }
 
+PRE {
+    overflow: auto;
+}
+
 .siteHeader {
     border-bottom: solid $text-color 1px;
     margin-bottom: $spacing-unit;
