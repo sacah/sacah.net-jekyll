@@ -13,7 +13,17 @@
             <div class="hideShadowBox"></div>
         </div>
         
-        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+        <script>
+            var cb = function() {
+                var l = document.createElement('link'); l.rel = 'stylesheet';
+                l.href = '{{ "/css/main.css" | prepend: site.baseurl }}';
+                var h = document.getElementsByTagName('head')[0]; h.appendChild(l);
+            };
+            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+              webkitRequestAnimationFrame || msRequestAnimationFrame;
+            if (raf) raf(cb);
+            else window.addEventListener('load', cb);
+        </script>
     </body>
 
 </html>
