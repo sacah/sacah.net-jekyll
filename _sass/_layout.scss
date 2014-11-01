@@ -52,11 +52,12 @@
 
             FOOTER {
                 SPAN {
-                    margin-left: -111px; 
+                    margin-left: -121px; 
                     width: 60px; 
-                    padding: 6px 10px 6px 6px; 
+                    padding: 6px 10px; 
                     position: absolute; 
                     font-size: 1.5em;
+                    float: none;
                 }
                 .date {
                     top: 0; 
@@ -76,6 +77,10 @@
                         text-decoration: underline;
                         color: $background-color;
                     }
+                }
+                LI {
+                    display: inline;
+                    float: none;
                 }
             }
         }

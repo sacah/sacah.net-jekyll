@@ -2,7 +2,7 @@
 layout: post
 title: Linux Batch Thumbnail Creation of folder with subdirectories
 date: '2014-04-13T12:36:00.000+10:00'
-author: sacah
+author: adrian
 tags:
 - bash
 - programming
@@ -10,6 +10,7 @@ tags:
 - raspberry pi
 - linux
 - hack
+- adrian
 modified_time: '2014-04-13T12:41:13.928+10:00'
 blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-592268148388679244
 blogger_orig_url: http://www.sacah.net/2014/04/linux-batch-thumbnail-creation-of.html
@@ -20,6 +21,8 @@ I have a RaspberryPi with a 750gb attached HDD, on this drive I store a folder c
 I wanted to create a new directory that had the same structure of Photos, but all the images are smaller thumbnailed versions.
 
 To accomplish this I tried a number of programs and scripts I found online for linux, but most didn't handle sub-directories, I then tried to find programs on Windows that would do this across the network, but they either didn't handle sub-directories or didn't handle errors in network traffic and would bomb out.
+
+~~~fold~~~
 
 So I wrote my own Bash script
 
