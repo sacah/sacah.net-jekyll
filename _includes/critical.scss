@@ -14,7 +14,6 @@ BODY {
 
 UL, LI, BODY, H1 {
     margin: 0;
-    padding: 0;
 }
 
 A {
@@ -60,6 +59,10 @@ PRE {
     NAV {
         padding: $spacing-unit /2 $spacing-unit;
         
+        UL {
+            padding: 0;
+        }
+        
         LI {
             display: inline-block;
             margin-right: $spacing-unit;
@@ -102,6 +105,7 @@ PRE {
             }
             UL {
                 display: inline;
+                padding: 0;
                 list-style: none;
             }
             LI {
@@ -114,6 +118,10 @@ PRE {
 
 .fullPost {
     padding: 0 $spacing-unit;
+    
+    UL {
+        margin-bottom: $spacing-unit;
+    }
     
     FOOTER {
         margin-top: $spacing-unit * 2;

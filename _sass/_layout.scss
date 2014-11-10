@@ -8,6 +8,30 @@
 .contentWrapper {
 }
 
+.graph-container { 
+    width: 100%; 
+    max-width: 600px; 
+    
+    TH {
+        font-weight: bold;
+    }
+}
+.graph-container TBODY TH { width: 50px; border-bottom: 1px solid lighten($text-color, 70%); }
+.graph-bar-hor { padding: 2px 0; color: #FFF; font-weight: bold; overflow: hidden; }
+.graph-bar-hor {
+    .key {
+        float: left;
+        padding: 0 10px;
+    }
+    .result {
+        float: right;
+        padding: 0 10px;
+    }
+}
+.graph-color-1 { background-color: #DE1B1B; }
+.graph-color-2 { background-color: #0971B2; }
+.graph-color-3 { background-color: #2B2B2B; }
+
 @media screen and (min-width: $on-slim) {
     .onSlim {
         display: none;

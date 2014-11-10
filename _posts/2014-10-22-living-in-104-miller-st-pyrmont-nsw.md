@@ -22,4 +22,3 @@ Internet is serviced by a few providers, you'll get between 7000-8000down, 900-1
 
 The complex is reasonable quite, level 4+ has a nice view of the city and you have bbqs and entertaining areas both in the courtyard and on the roof.
 
-{% picture 104-miller-st.jpg %}
