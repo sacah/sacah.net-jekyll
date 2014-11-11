@@ -17,7 +17,7 @@
     }
 }
 .graph-container TBODY TH { width: 50px; border-bottom: 1px solid lighten($text-color, 70%); }
-.graph-bar-hor { padding: 2px 0; color: #FFF; font-weight: bold; overflow: hidden; }
+.graph-bar-hor { padding: 2px 0; color: #FFF; font-weight: bold; overflow: hidden; transition: width 1s ease-in-out; }
 .graph-bar-hor {
     .key {
         float: left;
@@ -31,6 +31,10 @@
 .graph-color-1 { background-color: #DE1B1B; }
 .graph-color-2 { background-color: #0971B2; }
 .graph-color-3 { background-color: #2B2B2B; }
+
+.graph-container.wait-to-be-scrolled .graph-bar-hor {
+    width: 1px!important;    
+}
 
 @media screen and (min-width: $on-slim) {
     .onSlim {
