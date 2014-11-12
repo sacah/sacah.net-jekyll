@@ -1,4 +1,4 @@
 {{ post.content | split: '~~~fold~~~' | first }}
 {% if post.content contains '~~~fold~~~' %}
-    <a href="/{ post.url | prepend: site.baseurl }}">Read more...</a>
+    <a href="/{{ post.url | prepend: site.baseurl }}">Read more...</a>
 {% endif %}

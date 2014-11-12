@@ -192,7 +192,74 @@ With 3 graphics cards, things get a bit more unpredictable. I had to play this m
 * Everything else maxed out
 * Built in benchmark tool, run several times to warm the cards up
 
- 
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Batman: Arkam City FPS Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">150fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 58%"><span class="key">Dual</span><span class="result">87fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 29%"><span class="key">Single</span><span class="result">44fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 80%"><span class="key">Triple</span><span class="result">121fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 52%"><span class="key">Dual</span><span class="result">79fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 26%"><span class="key">Single</span><span class="result">40fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 50%"><span class="key">Triple</span><span class="result">75fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 36%"><span class="key">Dual</span><span class="result">54fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 26%"><span class="key">Single</span><span class="result">39fps</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Batman: Arkam City SLI Scaling Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">200%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 80%"><span class="key">Dual</span><span class="result">161%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 50%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 80%"><span class="key">Triple</span><span class="result">161%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 73%"><span class="key">Dual</span><span class="result">146%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 50%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 56%"><span class="key">Triple</span><span class="result">112%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 51%"><span class="key">Dual</span><span class="result">102%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 50%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 ### Single GPU configuration
 
 * GPU1 - Temp: 62 degrees. Load: 70-98%. Core clock: 1058. Mem: 2000MB
@@ -238,6 +305,74 @@ When I ran with 3 GPU's, the load on each GPU dropped to 50-70%, resulting in re
 * Every other setting = maxed out
 * Random driving and explosions
 
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Farcry 3 FPS Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">86fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 70%"><span class="key">Dual</span><span class="result">60fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 46%"><span class="key">Single</span><span class="result">40fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 85%"><span class="key">Triple</span><span class="result">73fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 64%"><span class="key">Dual</span><span class="result">55fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 37%"><span class="key">Single</span><span class="result">32fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 69%"><span class="key">Triple</span><span class="result">60fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 57%"><span class="key">Dual</span><span class="result">49fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 32%"><span class="key">Single</span><span class="result">28fps</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Farcry 3 SLI Scaling Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 94%"><span class="key">Triple</span><span class="result">215%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 65%"><span class="key">Dual</span><span class="result">150%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 43%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">228%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 75%"><span class="key">Dual</span><span class="result">171%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 43%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 93%"><span class="key">Triple</span><span class="result">214%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 76%"><span class="key">Dual</span><span class="result">175%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 43%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 ### Single GPU configuration
 
 * GPU: Temp - 68 degrees. Load: 99%. Core clock - 1058. GPU mem - 2000Mb
@@ -282,6 +417,74 @@ With 3 graphics cards. Gameplay was very smooth for the most part, there were ve
 * Motion blur = normal
 * Quality = Very high.
 * Heavy squad mission
+
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Metro Last Light Redux FPS Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">64fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 70%"><span class="key">Dual</span><span class="result">45fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 36%"><span class="key">Single</span><span class="result">23fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 86%"><span class="key">Triple</span><span class="result">55fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 65%"><span class="key">Dual</span><span class="result">42fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 34%"><span class="key">Single</span><span class="result">22fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 75%"><span class="key">Triple</span><span class="result">48fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 62%"><span class="key">Dual</span><span class="result">40fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 29%"><span class="key">Single</span><span class="result">19fps</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Metro Last Light Redux SLI Scaling Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">265%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 73%"><span class="key">Dual</span><span class="result">195%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 37%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 94%"><span class="key">Triple</span><span class="result">250%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 71%"><span class="key">Dual</span><span class="result">190%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 37%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 95%"><span class="key">Triple</span><span class="result">252%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 71%"><span class="key">Dual</span><span class="result">190%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 37%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Single GPU configuration
 
@@ -329,6 +532,74 @@ Playing the same mission with 3 cards, the GPU usage was a little lower per card
 * Everything else maxed out
 * Built in benchmark tool
 
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Tomb Raider FPS Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">76fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 71%"><span class="key">Dual</span><span class="result">54fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 38%"><span class="key">Single</span><span class="result">29fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 79%"><span class="key">Triple</span><span class="result">60fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 57%"><span class="key">Dual</span><span class="result">44fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 30%"><span class="key">Single</span><span class="result">23fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 60%"><span class="key">Triple</span><span class="result">46fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 40%"><span class="key">Dual</span><span class="result">35fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 23%"><span class="key">Single</span><span class="result">18fps</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Tomb Raider SLI Scaling Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">262%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 71%"><span class="key">Dual</span><span class="result">186%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 38%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 99%"><span class="key">Triple</span><span class="result">260%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 73%"><span class="key">Dual</span><span class="result">191%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 38%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 97%"><span class="key">Triple</span><span class="result">255%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 74%"><span class="key">Dual</span><span class="result">194%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 38%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 ### Single card configuration
 
 * GPU: Temp - 65 degrees. Load 99%. Core clock - 1058Mhz. Mem - 2000Mb
@@ -372,6 +643,74 @@ Tomb raider scales excellently to 3 cards. There was only a very small amount of
 * HBAO+ low
 * Everything else on and maxed out
 * Driving around the city, using same route for each test
+
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Watch Dogs FPS Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">80fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 68%"><span class="key">Dual</span><span class="result">55fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 56%"><span class="key">Single</span><span class="result">45fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 43%"><span class="key">Triple</span><span class="result">35fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 56%"><span class="key">Dual</span><span class="result">45fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 43%"><span class="key">Single</span><span class="result">35fps</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 28%"><span class="key">Triple</span><span class="result">23fps</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 43%"><span class="key">Dual</span><span class="result">35fps</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 35%"><span class="key">Single</span><span class="result">28fps</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Watch Dogs SLI Scaling Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">Triple</span><span class="result">177%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 69%"><span class="key">Dual</span><span class="result">122%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 56%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Avg</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 56%"><span class="key">Triple</span><span class="result">100%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 72%"><span class="key">Dual</span><span class="result">128%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 56%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 46%"><span class="key">Triple</span><span class="result">82%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 70%"><span class="key">Dual</span><span class="result">125%</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 56%"><span class="key">Single</span><span class="result">100%</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Single GPU configuration
 
