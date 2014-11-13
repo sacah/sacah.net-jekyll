@@ -8,7 +8,7 @@ layout: default
             {% if tag == page.tag %}
                 <article>
                     <header>
-                        <h1><a href="/{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+                        <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
                     </header>
                     {% include post_content.html %}
                     <footer>

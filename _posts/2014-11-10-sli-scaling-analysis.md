@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SLI scaling analysis with GTX780
+title: SLI scaling analysis with GTX 780
 date: '2014-11-10T09:03:18.534Z'
 author: adrian
 tags:
@@ -13,7 +13,7 @@ modified_time: '2014-11-10T09:03:18.534Z'
 
 In this SLI scaling analysis, I have selected a number of different variables to test, which all come into play with SLI scaling in games.
 
-The cards used to test are Nvidia GeForce Gtx780's (yes they are not the most powerful cards, but still up to the task, and this is about scalability, not brute power).
+The cards used to test are Nvidia GeForce GTX 780's (yes they are not the most powerful cards, but still up to the task, and this is about scalability, not brute power).
 These are tested in single, dual and triple card configurations, in a variety of different games. 
 
 Settings were chosen which work well with a dual card configuration, designed to maximise all available graphics settings whilst still being playable. 
@@ -22,7 +22,7 @@ This allows the cards to be pushed extremely hard, which also allows the differe
 My definition of playable is not an arbitrary number of frames, but the subjective user experience of the game feeling smooth enough to be an enjoyable experience. 
 
 |---
-| What we're testing
+| **What we're testing**
 |:-
 | Frame rates; minimum, average and maximum, of course the minimum and average fps is more important to playability. 
 | Each graphics cards maximum temperatures during play. 
@@ -39,7 +39,7 @@ My definition of playable is not an arbitrary number of frames, but the subjecti
 | OS | Windows 8.1
 | CPU | Core i7 4820k OC'd to 4.4Ghz
 | Mobo | Asrock x79 Extreme 6
-| RAM | 16GB of G.skill sniper 1866Mhz in quad channel configuration
+| RAM | 16GB of G.Skill Sniper 1866Mhz in quad channel configuration
 | HDD | Samsung 840pro 250GB HDD (System & BF4) W.D. Black 7200rpm 3TB
 | Case | Thermaltake Overseer (Closed to represent a normal gaming setup)
 | Monitors | 3 x 1920 x 1080 res in surround for res of 5760 x 1080
@@ -149,7 +149,7 @@ I am not responsible for any damage caused by using these programs
 
 ### Single configuration
 
-* GPU1 - Temp: 65 degrees. Load: 98-99%. Core clock: 1058. Mem: 2800MB
+* GPU1 - Temp: 65 degrees. Load: 98-99%. Core clock: 1058Mhz. Mem: 2800Mb
 * CPU - Load: 50-80%. Frequency: 100%
 * FPS: min - 31, average - 40, max 45.
 * Complete maps played: 1
@@ -160,8 +160,8 @@ Game play with the single card was manageable but certainly not optimal, the fps
 ### Dual GPU configuration
 *Note second GPU's clock normally 1006 at boost this can produce a variance of up to 2.5% less compared to both GPU's clocked at 1058Mhz.*
 
-* GPU1 - temp: 79 degrees. Load: 90-95. Core clock: 1058. mem: 2800Mb
-* GPU2 - temp: 79 degrees. Load: 95-99. Core clock: 1006. mem: 2800Mb
+* GPU1 - temp: 79 degrees. Load: 90-95. Core clock: 1058Mhz. mem: 2800Mb
+* GPU2 - temp: 79 degrees. Load: 95-99. Core clock: 1006Mhz. mem: 2800Mb
 * CPU - Load: 60-70%. Frequency: 100%
 * FPS: min - 55/65/80
 * Complete maps played: 2
@@ -262,7 +262,7 @@ With 3 graphics cards, things get a bit more unpredictable. I had to play this m
 
 ### Single GPU configuration
 
-* GPU1 - Temp: 62 degrees. Load: 70-98%. Core clock: 1058. Mem: 2000MB
+* GPU1 - Temp: 62 degrees. Load: 70-98%. Core clock: 1058Mhz. Mem: 2000Mb
 * CPU - Load: 40-60%. Frequency: 100%
 * FPS: min - 39, average - 54, max 75
 * Runs: 3
@@ -375,7 +375,7 @@ When I ran with 3 GPU's, the load on each GPU dropped to 50-70%, resulting in re
 
 ### Single GPU configuration
 
-* GPU: Temp - 68 degrees. Load: 99%. Core clock - 1058. GPU mem - 2000Mb
+* GPU: Temp - 68 degrees. Load: 99%. Core clock - 1058Mhz. GPU mem - 2000Mb
 * CPU: Load - 40%. Frequency - 100%
 * FPS: min - 28, average - 32, max - 40
 * Time played: 15mins
@@ -479,7 +479,7 @@ With 3 graphics cards. Gameplay was very smooth for the most part, there were ve
             <th>Min</th>
             <td>
                 <div class="graph-bar-hor graph-color-1" style="width: 95%"><span class="key">Triple</span><span class="result">252%</span></div>
-                <div class="graph-bar-hor graph-color-2" style="width: 71%"><span class="key">Dual</span><span class="result">190%</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 79%"><span class="key">Dual</span><span class="result">210%</span></div>
                 <div class="graph-bar-hor graph-color-3" style="width: 37%"><span class="key">Single</span><span class="result">100%</span></div>
             </td>
         </tr>
@@ -488,8 +488,8 @@ With 3 graphics cards. Gameplay was very smooth for the most part, there were ve
 
 ### Single GPU configuration
 
-* GPU: Temp - 65 degrees. Load - 98%. Core clock - 1058. Mem - 1600
-* CPU: Load - 30%. Frequency - 100%.
+* GPU: Temp - 65 degrees. Load - 98%. Core clock - 1058Mhz. Mem - 1600Mb
+* CPU: Load - 30%. Frequency - 100%
 * FPS: min - 19, average - 22, max - 23
 * Runs: 3
 
@@ -714,7 +714,7 @@ Tomb raider scales excellently to 3 cards. There was only a very small amount of
 
 ### Single GPU configuration
 
-* GPU: Temp - 60 degrees. Load 98%. Core clock - 1058. Mem - 3000Mb
+* GPU: Temp - 60 degrees. Load 98%. Core clock - 1058Mhz. Mem - 3000Mb
 * CPU: Load - 50-60%. Frequency - 100%.
 * FPS: min - 28, average - 35, max - 45
 * Time spent in game: 20mins
