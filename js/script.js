@@ -16,8 +16,6 @@ var inView=function () {
         }
     */
     var scrolledItems={};
-    var supportPageOffset = window.pageXOffset !== undefined;
-    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
     
     function getTop(el) {
         return el.offsetTop;
@@ -46,7 +44,7 @@ var inView=function () {
     }
     
     function checkView() {
-        var top=supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+        var top=window.scrollY;
         var height=window.innerHeight;
         for(var y in scrolledItems) {
             if(y > top && y < (top+height-100)) {
@@ -63,11 +61,10 @@ var inView=function () {
         addEventListener('load', checkView, false); 
         addEventListener('scroll', checkView, false); 
         addEventListener('resize', checkView, false); 
-    } else if (window.attachEvent)  {
-        attachEvent('onDOMContentLoaded', checkView);
-        attachEvent('onload', checkView);
-        attachEvent('onscroll', checkView);
-        attachEvent('onresize', checkView);
+    } else {
+        _add=function () {
+            console.log('*** Canceled inView');
+        }
     }
     
     return {

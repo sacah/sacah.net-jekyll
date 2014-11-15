@@ -21,6 +21,8 @@ This allows the cards to be pushed extremely hard, which also allows the differe
 
 My definition of playable is not an arbitrary number of frames, but the subjective user experience of the game feeling smooth enough to be an enjoyable experience. 
 
+The following variables have been chosen to assess their impact on fps, perceived smoothness i.e. with microstuttering etc and to discover any bottlenecks which may impact on 2-way and 3-way SLI, for instance: is a quad core hyperthreaded processor capable of keeping up with 3 demanding cards, I've read many reviews that have often made assumptions about where the bottleneck (if any) is occuring, the data presented here will hopefully shed some more light on these factors.
+
 |---
 | **What we're testing**
 |:-
@@ -155,6 +157,7 @@ I am not responsible for any damage caused by using these programs
 * Complete maps played: 1
             
 In the single run, the GPU load was very good and stable, only varying between 98 and 99%. The CPU was worked fairly hard, but never reached levels to bottleneck and frequency never dropped below 100%. The memory use got quite high, but didn't quite max out the 3GB on board the 780. The GPU temperature was quite cool throughout the game, settling on 65 degrees celcius and the core clock remained stable at 1058Mhz with GPU boost, never showing signs of throttling.
+
 Game play with the single card was manageable but certainly not optimal, the fps dropped to noticeable ranges fairly consistently, and the change in frame rates was quite noticeable. Lowering settings such as MSAA would make it run smoothly.
 
 ### Dual GPU configuration
@@ -178,7 +181,9 @@ In the dual test, the GPU loads remained very stable with neither dropping below
 * FPS: min - 40. Average: 75. max - 110
 * Complete maps played: 3
 
-With 3 graphics cards, things get a bit more unpredictable. I had to play this map from start to finish 3 times to get the proper data, which includes two of those being done after a restart. All 3 times, the tower went down, each game lasted from 20-30 minutes. As evidenced by the graph, the frame rate would drop to as low as 40, this wasn't very often, but still happened enough that it had to be declared the minimum frame rate. For the most part, the minimum frames didn't drop below 60, and gameplay was fairly smooth for much of the time, however there were periods microstuttering which happened fairly often, while it was certainly still playable, the microstuttering did make it feel less smooth than playing with two cards. . The CPU load went from 80% up to a whopping 90% with 100% frequency, however at no point did any of the threads reach 100%, indicating that the slow downs are a scaling issue rather than a CPU bottleneck issue. The GPU temps were good, with two of the GPU's staying below throttling temp, the third however did reach 80 degrees and did throttle to as low as 875Mhz, however the temp didn't go any higher. While having 3 cards was playable, two cards is optimal for BF4 at these settings.
+With 3 graphics cards, things get a bit more unpredictable. I had to play this map from start to finish 3 times to get the proper data, which includes two of those being done after a restart. All 3 times, the tower went down, each game lasted from 20-30 minutes. As evidenced by the graph, the frame rate would drop to as low as 40, this wasn't very often, but still happened enough that it had to be declared the minimum frame rate. For the most part, the minimum frames didn't drop below 60, and gameplay was fairly smooth for much of the time, however there were periods microstuttering which happened fairly often, while it was certainly still playable, the microstuttering did make it feel less smooth than playing with two cards. 
+
+The CPU load went from 80% up to a whopping 90% with 100% frequency, however at no point did any of the threads reach 100%, indicating that the slow downs are a scaling issue rather than a CPU bottleneck issue. The GPU temps were good, with two of the GPU's staying below throttling temp, the third however did reach 80 degrees and did throttle to as low as 875Mhz, however the temp didn't go any higher. While having 3 cards was playable, two cards is optimal for BF4 at these settings.
 
 ![Batman: Arkam City Image](/img/BatmanAC_hero.jpg)
 
@@ -504,7 +509,11 @@ In the single GPU benchmark, the game was noticeably slow and would need to have
 * FPS: min - 40, average - 42, max - 45
 * Runs: 3
 
-In the Dual GPU benchmark, we notice something odd, aside from the fact that the average and maximum scaling is extremely good, the minimum scaling as increased to 210% of the single card. Some of the improvement can be attributed to the second card having a slightly higher clock rate, amounting to a possible increase in performance of 1.2%, there is also the possibility of a small difference in performance which can happen as well. However I have seen this replicated in benchmarks that others have made, possibly having the additional card was able to deal with the regular textures and calculations as well as the Advanced physx in a more efficient manner than simply 1 card attempting to manage all of those elements at once (Note that the GTX 970 and 980 handle physx considerably better and the benchmarks that I have seen with them, the minimum scaling isn't quite as high). Regardless, the results are exceptional and the gaming experience is vastly improved by having a second card, while it does feel a little "chunky" due to the fps being a little lower than optimal, it doesn't effect gameplay too badly and is certainly vastly better than a single card. 
+In the Dual GPU benchmark, we notice something odd, aside from the fact that the average and maximum scaling is extremely good, the minimum scaling as increased to 210% of the single card. Some of the improvement can be attributed to the second card having a slightly higher clock rate, amounting to a possible increase in performance of 1.2%, there is also the possibility of a small difference in performance which can happen as well. However I have seen this replicated in benchmarks that others have made, possibly having the additional card was able to deal with the regular textures and calculations as well as the Advanced physx in a more efficient manner than simply 1 card attempting to manage all of those elements at once (Note that the GTX 970 and 980 handle physx considerably better and the benchmarks that I have seen with them, the minimum scaling isn't quite as high). 
+
+Regardless, the results are exceptional and the gaming experience is vastly improved by having a second card, while it does feel a little "chunky" due to the fps being a little lower than optimal, it doesn't effect gameplay too badly and is certainly vastly better than a single card. 
+
+
 The GPU's temp gets very close to throttling but thankfully doesn't. The load fluctuates a little, but as you can see from the scaling and the closeness of the min and max frames, it's keeps everything stable. Notice the CPU use has increased substantially from a single card, still no evidence of any bottleneck.
 
 ### Triple card configuration
@@ -630,7 +639,7 @@ This is a game that scaled extremely well. The scene was smooth for the most par
 * FPS: min - 46, average - 60, max - 76
 * Runs: 3
 
-Tomb raider scales excellently to 3 cards. There was only a very small amount of micro stuttering, that I had to look for. Overall the benchmark felt smooth and certainly was smoother with 3 cards than with 2, and significantly better than 1, with most frames sitting around the 60 mark. The GPU's load all stayed 90% and above, the 3rd card did throttle a little when it hit 80 degrees after running the benchmark 3 times, but still managed to remain smooth. These extremely high settings are definately something three cards feels suited to manage.
+Tomb Raider scales excellently to 3 cards. There was only a very small amount of micro stuttering, that I had to look for. Overall the benchmark felt smooth and certainly was smoother with 3 cards than with 2, and significantly better than 1, with most frames sitting around the 60 mark. The GPU's load all stayed 90% and above, the 3rd card did throttle a little when it hit 80 degrees after running the benchmark 3 times, but still managed to remain smooth. These extremely high settings are definately something three cards feels suited to manage.
 
 ![Watch Dogs Image](/img/Watch_Dogs_hero.jpg)
 
@@ -730,7 +739,11 @@ The single GPU run, while having overall fairly low frames, did feel a little sm
 * FPS: min - 35, average - 45, max - 55. Drop to 17-30fps in one area
 * Time spent in game: 20mins
 
-The dual GPU run wasn't overly ideal. The GPU load dropped significantly and fluctuated wildly depending on which area of the city you were in and what you were doing. Loading the farcry 3 SLI profile helped in some areas of the city, and hindered in others (same thing happened when using the assassins creed black flag profile), I found it was best just to run with the default profile. There were certain areas of the city which showed poor optimisation, with the primary GPU dropping it's clock rate to 797Mhz before returning to 1058 shortly afterwards, with no identifiable reason as to why it would do that. GPU load for both GPU's would go from being relatively stable around 85-95% to fluctuating wildly 50-80%, and the frames along with it. The CPU load stayed fairly stable at 50-60% and the frequency at 100%. temps stayed just short of throttling for the period of testing. Stuttering happened occasionally. The game was playable but the stuttering and slow downs would get rather frustrating at times, particularly when you could drive through a very busy section with lots of textures, to another area of the city which didn't appear to have anything more going on and in some cases, had less going on, and yet would stutter and slow down. Playing with the single card actually felt smoother for the most part, despite having lower frames. There was a section in which the frames dropped as low as 17/sec, coinciding with the drop in GPU1's slowed down clock rate, this didn't happen with the single card. I left this off the chart because it was the only area I found which did it and putting it in would skew the results, as normally it was fine.
+The dual GPU run wasn't overly ideal. The GPU load dropped significantly and fluctuated wildly depending on which area of the city you were in and what you were doing. Loading the Farcry 3 SLI profile helped in some areas of the city, and hindered in others (same thing happened when using the Assassins Creed Black Flag profile), I found it was best just to run with the default profile. 
+
+There were certain areas of the city which showed poor optimisation, with the primary GPU dropping it's clock rate to 797Mhz before returning to 1058 shortly afterwards, with no identifiable reason why. GPU load for both GPU's would go from being relatively stable around 85-95% to fluctuating wildly between 50-80%, and the frames along with it. The CPU load stayed fairly stable at 50-60% and the frequency at 100%. temps stayed just short of throttling for the period of testing. Stuttering happened occasionally. 
+
+The game was playable but the stuttering and slow downs would get rather frustrating at times, particularly when you could drive through a very busy section with lots of textures, to another area of the city which didn't appear to have anything more going on and in some cases, had less going on, and yet would stutter and slow down. Playing with the single card actually felt smoother for the most part, despite having lower frames. There was a section in which the frames dropped as low as 17/sec, coinciding with the drop in GPU1's slowed down clock rate, this didn't happen with the single card. I left this off the chart because it was the only area I found which did it and putting it in would skew the results, as normally it was fine.
 
 ### Triple GPU configuration
 *Note With adjusted clocks, 3GPU config can produce a variance of up to 2.5% less than with all GPU's at 1058Mhz.*
@@ -743,3 +756,11 @@ The dual GPU run wasn't overly ideal. The GPU load dropped significantly and flu
 * Time played: 2 hours
 
 The scaling for 3 cards is absolutely abysmal, I checked the individual CPU thread loads to look for any signs of a bottleneck and they all stayed 70% or below. The GPU loads were pathetic, as well as the game slowing all cards to their base clocks. Most areas were very stuttery and slow, felt worse than both 1 and 2 cards were. Occasionally the fps would pick up briefly, then drop again, rain or shine, the results were the same. Basically this is a game to steer clear of if you intend to go more than 2 cards (Or disable SLI).
+
+## Conclusion
+
+Some interesting results were found throughout the tests performed, with the different games all scaling slightly differently, at no point did the CPU ever show itself as being a bottleneck, even in BF4 where the load got to 90%, none of the threads reached 100%, and in all of the games tested, every thread had something to do, even if in some games, they were considerably lower load than others. The way the GPU's behaved in different games showed the difference between a well optimised game and a poorly optimised game. 
+
+Tomb Raider showed itself to be an excellently optimised game with fantastic scaling, while Watch Dogs proved to be the exact opposite, with wildly fluctuating GPU loads and clocks, as well as some clear evidence of poor texture optimisation, while true that the GPU memory did max out in Watch Dogs, the way the GPU's behaved in 2-way and 3 way, particularly with their load and clock rates, and in certain areas of the city, shows that memory is only 1 piece of the puzzle. 
+
+For people thinking about going 2-way or 3-way SLI, I found that a few tweaks such as the SLI rendering tweak mentioned earlier, and capping the fps at an acceptable level, proved a much more enjoyable experience, for instance, playing Seige of Shanghai in BF4 with 3 cards and the fps capped at 60, proved a much smoother result, eliminating almost all of the micro stuttering, the minimum fps was 57, that was when the tower went down, the rest of the time it never moved off of 60, this prevents the cards from wasting precious power and time rendering frames that will never be displayed on the monitors, as well as helping to keep them a little cooler. Finding an acceptable spot between min and average fps works very well. I hope this has shed some light on what really goes on with SLI scaling in games, and show that by analysis far more than just a couple of common factors, we get a much better picture of what is effecting the way multi card systems behave with different games. 
