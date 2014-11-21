@@ -1,0 +1,13 @@
+---
+layout: post
+title: wamp "MySQL Server has gone away" after 60seconds
+date: '2010-08-19T22:16:00.000+10:00'
+author: sacah
+tags:
+- howto
+modified_time: '2010-08-19T22:16:20.463+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-9218114807455444805
+blogger_orig_url: http://www.sacah.net/2010/08/wamp-mysql-server-has-gone-away-after.html
+---
+
+So working on my local wampserver with some large MyQL databases I was often getting the MySQL has gone away message, and timed it to occur after 60seconds. I binged the message and got a number of suggestions to increase the timeouts and cache sized of MySQL, but this didn't help at all.<br />So I looked in the php.ini and found under the MySQL section there is a mysql.connect_timeout=60 I increased this to 600 and the problem went away.<br /><br /><br />Hope this helps others having this same issue.

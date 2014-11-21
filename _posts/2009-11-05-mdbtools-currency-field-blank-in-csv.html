@@ -1,0 +1,14 @@
+---
+layout: post
+title: MDBTools - Currency field blank in CSV
+date: '2009-11-05T23:33:00.001+10:00'
+author: sacah
+tags:
+- software
+- fixes
+modified_time: '2009-11-05T23:37:56.521+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-5728587199659972891
+blogger_orig_url: http://www.sacah.net/2009/11/mdbtools-currency-field-blank-in-csv.html
+---
+
+We use MDBTools to convert an Access DB to CSVs to import into MySQL. Moving a site to another server we tried installing MDBTools via YUM, but continued getting Segment Faults each time we ran mdb-export.<br />So we downloaded the source and recompiled, everything seemed to work, except the currency column was blank in the CSV. All other types worked, just currency appeared to have a problem.<br /><br />I did a ldd on mdb-export on the old server that worked and compared to ldd on the new server, and noticed some differences, so I decided to try the RPM avaliable for download at the<a href="http://www.sourceforge.net/projects/mdbtools/"> mdbtools SF page</a>.<br /><br />On a rpm -i it complained that 'libreadline.so.4 is needed by mdbtools-0.5-1.i386'<br />I did a yum list readline* and found<br />readline.i386 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5.1-1.1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;installed<br />Available Packages<br />compat-readline43.i386 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4.3-3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;base<br /><br />So I rpm -e mdbtools, yum install compat-readline43.i386, and rpm -i <a href="http://www.sourceforge.net/projects/mdbtools/">mdbtools</a> from SF.<br /><br />Now mdb-export correctly exports the currency fields to CSV.

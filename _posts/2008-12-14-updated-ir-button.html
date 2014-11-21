@@ -1,0 +1,15 @@
+---
+layout: post
+title: Updated IR button
+date: '2008-12-14T19:12:00.007+10:00'
+author: sacah
+tags:
+- ir
+- picaxe
+- project
+modified_time: '2008-12-21T08:54:43.711+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-2661299374442928420
+blogger_orig_url: http://www.sacah.net/2008/12/updated-ir-button.html
+---
+
+I showed a simple IR button the other day, but mentioned it could be activated by bright light. I remembered the way other systems deal with this by pulsing the IR light and detecting the highs/lows.<br />So I modified the system and it now works happily in direct light.<br /><br />Below is the PICAXE code, the transmitter IR LED is connected to pin 1, the detector IR LED is connected in reverse polarity to pin 4.<br /><br /><div style="border: 1px solid rgb(170, 170, 170); padding: 8px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><pre>main:<br />readadc 4,b0<br />if b0 &gt; 50 then ledoff<br />high 1<br />readadc 4,b0<br />low 1<br />pause 10<br />readadc 4,b1<br />if b0 &gt; 100 AND b1 &lt; 50 then ledon<br />goto ledoff<br /><br />ledon:<br />high 2<br />pause 250<br />goto main<br /><br />ledoff:<br />low 2<br />goto main</pre></div><br />Updated video below<br /><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/xnCtcjOKu5A&amp;hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/xnCtcjOKu5A&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>

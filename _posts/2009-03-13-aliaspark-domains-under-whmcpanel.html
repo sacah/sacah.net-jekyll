@@ -1,0 +1,13 @@
+---
+layout: post
+title: Alias/Park domains under WHM/cPanel
+date: '2009-03-13T17:45:00.004+10:00'
+author: sacah
+tags:
+- cpanel
+modified_time: '2009-07-25T20:12:30.036+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-2543727632504001322
+blogger_orig_url: http://www.sacah.net/2009/03/aliaspark-domains-under-whmcpanel.html
+---
+
+Trying to park a few domain names on a WHM server the other day, so any web visits or emails would be redirected to the main domain name. Eg second.com and third.com would redirect traffic to main.com<br /><br />After trying a few methods under cPanel and getting the same error each time,<br /><code>Error from park wrapper: Using nameservers with the following IPs: x.x.x.x x.x.x.x. Sorry, the domain is already pointed to an IP address that does not appear to use DNS servers associated with this server. Please transfer the domain to this servers nameservers or have your administrator add one of its nameservers to /etc/ips.remotedns and make the proper A entries on that remote nameserver.</code><br /><br />The problem was the nameservers were 3rd party and had to stay that way, most fixes involved changing the nameservers, adding to cPanel so it verified them, then changing nameservers back. But for a business getting emails on the other 2 domain names, that isn't an acceptable solution.<br /><br />I ended up finding the Park Domain option in WHM under the DNS functions in the left menu. Using this you simply select the master domain, eg main.com and type in the domain name you'd like to park, eg second.com. This then parks it regardless of its nameservers.<br />Then you can login to the cPanel account and setup email domain forwarders.

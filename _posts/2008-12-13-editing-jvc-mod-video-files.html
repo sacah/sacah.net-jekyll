@@ -1,0 +1,13 @@
+---
+layout: post
+title: Editing JVC MOD video files
+date: '2008-12-14T09:14:00.004+10:00'
+author: sacah
+tags:
+- fixes
+modified_time: '2008-12-21T08:56:27.441+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-4209105428500466289
+blogger_orig_url: http://www.sacah.net/2008/12/editing-jvc-mod-video-files.html
+---
+
+I recently purchased a JVC Everio 330 video camera. I found the files it creates are .MOD files, which looked like MPEG2 files. I no longer have VirtualDub with the MPEG2 addon, so I figured I'd try the included software to download and edit these MOD files. After some use I'm really unimpressed with their software, and have since uninstalled it all.<br /><br />When I hook the camera up to the computer, it pops up Explorer and I can manually copy all the files into my directory of choice.<br /><br />I downloaded <a href="http://www.virtualdub.org/download.html">VirtualDub</a> and got the <a href="http://home.comcast.net/%7Efcchandler/Plugins/MPEG2/index.html">MPEG2 plugin</a> and <a href="http://home.comcast.net/%7Efcchandler/Plugins/AC3/index.html">AC-3 plugin</a> and hex edited the MPEG2 plugin and edited the File Open filter so *.mpg became *.mod. There is already a *.mpg in the MPEG1 file filter, so now VirtualDub will list .mod files by default, no more having to goto All Files.<br /><br />In your favorite hex editor you will find the File Filter string at 0x290CC, just change the next 3  references to *...m.p.g to *...m.o.d, the full stops inbetween are actually empty bytes, as the filter string is in unicode, just change the letters, not the full stops.<br /><br />Now it is quicker to copy files as I don't have to wait for ages for the software to load, I can store the files where I want, rather than in it's weird folder structure. VirtualDub is much easier to use and more powerful for what I do to movies, though it can't do those Special Effects, but I'd never use them anyway, if you needed to use them, edit it in VirtualDub, save and open in some other package to do special effects.<br /><br />To play files back in <a href="http://www.videolan.org/">VideoLAN</a> simple rename the libmod_plugin.dll in the plugins folder to something other than .dll and it will play, rather than thinking MOD are audio only.

@@ -1,0 +1,13 @@
+---
+layout: post
+title: WHM/cPanel Account use external mail server
+date: '2009-03-23T23:56:00.006+10:00'
+author: sacah
+tags:
+- cpanel
+modified_time: '2009-09-08T18:47:07.320+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-5237701807860951316
+blogger_orig_url: http://www.sacah.net/2009/03/whmcpanel-account-use-external-mail.html
+---
+
+I needed to set an account to use an external mail server. In ensim you would just turn off email for the account and it will lookup the MX records automatically. In cPanel there is not this feature, most help I found talked about editing local and remote domain files so cPanel would know which was a local or remote domain name.<br />Not really user friendly, which is the point of cPanel/WHM.<br /><br />I first tried editing the DNS Zone directly, via DNS Functions-&gt;Edit DNS Zone. But when I inputted a new MX record it would append the domain name to the end, which was wrong.<br />Then I found the DNS Functions-&gt;Edit MX Entry option. This let me set it to an external MX record. Once set email worked brilliantly.<br /><br /><div style="color: red;">Edit:</div>Bud posted a comment that said<br /><blockquote>Edit DNS function in WHM, you just need to ensure that you put a full stop at the end of the MX entry to stop it appending your domain name to it.</blockquote>I haven't been able to test this yet, let me know if you have success with it.

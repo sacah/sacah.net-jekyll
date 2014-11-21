@@ -1,0 +1,16 @@
+---
+layout: post
+title: USBee SX Logic Analyzer
+date: '2009-03-30T22:06:00.005+10:00'
+author: sacah
+tags:
+- mmc
+- spi
+- software
+- usbee sx
+modified_time: '2009-07-25T14:11:05.918+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-8072208944699481015
+blogger_orig_url: http://www.sacah.net/2009/03/usbee-sx-logic-analyzer.html
+---
+
+I've been playing with my USBee SX Logic Analyser. Physically the unit is nice and small, the hooks are easy to use. Unfortunately both the Suite software and the SX software crash when trying to Capture more than 200M samples in the buffer. I have used the Suite software to capture the SPI signals between a MMC card reader and the MMC card, the SPI decoder worked brilliantly. Would like to be able to reduce the text size, it shows the hex of each byte is quite large letters which means I can't fit many bytes onto one screen wide, and the scrolling is a bit troublesome. Would be great to have a the mouse wheel scroll, rather than zoom, as left/right clicking zooms in/out. Maybe even using the Page Up/Down to scroll larger chunks.<br /><br />I have just now tried to SPI decode a 20second capture, with maybe 6 bytes of SPI traffic and it keeps crashing on me. I saved it when I first captured it, being use to regular crashes by the software. But even once I reopen it and try and set the SPI decoder up again, gets part way through and hangs, just keeps taking up RAM until at about 1.5gb Windows kills it.<br /><br />When the software works this is a really nice system, with the above tweaks it would be awesome.<br /><br />I've let USBee know about the problems, see how long it takes for them to get back to me.

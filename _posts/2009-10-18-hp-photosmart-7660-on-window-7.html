@@ -1,0 +1,14 @@
+---
+layout: post
+title: HP Photosmart 7660 on Window 7
+date: '2009-10-18T21:21:00.001+10:00'
+author: sacah
+tags:
+- windows 7
+- fixes
+modified_time: '2009-10-18T23:41:10.707+10:00'
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-1465923091199872123
+blogger_orig_url: http://www.sacah.net/2009/10/hp-photosmart-7660-on-window-7.html
+---
+
+So I've had Windows 7 beta&nbsp; for a few months, really loving it. Only thing that annoyed me was my HP Photosmart 7660 printer wasn't in the default list of drivers when I went to Add Printer.<br />I surfed to the HP site to find that Windows Vista, therefore Windows 7 wasn't supported, but upon more searching I found a work around of installing the HP Deskjet 5600, which let me now print via my Photosmart 7660.<br /><br />One thing it didn't let me use was the memory card reader, which I really loved and used quite often. So after a few months of using other memory card readers and such, I got annoyed with it and decided to try and fix it. I downloaded the Windows XP drivers for the Photosmart 7660, ran the installer, and when it popped up saying it couldn't find x setup file, I launched Task Manager and End Tasked the setup process.<br />I did this so the extracted setup files would be left in the temp directory and allow me to play with them.<br /><br />So I popped up Device Manager, scanned for hardware changes. Under Other Devices it picked up a 'hpphotosmart 7600' and a 'photosmart 7600'. I right clicked on both and went to Properties, then choose to install drivers. When it asked to let Windows search or choose the directory, manually choose the temporary folder the setup created, for me it was C:\Users\%username%\Local Settings\Temp\HP_AiO<br />Both will detect the correct drivers and install.<br /><br />Once both have installed, the memory card reader started working, and when I went to print things, Photosmart 7660 was an option, it worked for printing black text. Haven't tried it with color, as I mostly print grey scale. I don't print much, so haven't had a chance to try again, but the program I was printing from crashed when I printed, not sure if that's related or not, see next time I print something.<br /><br />Let me know if you find any problems using this method.

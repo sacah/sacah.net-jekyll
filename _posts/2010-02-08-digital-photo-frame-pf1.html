@@ -1,0 +1,15 @@
+---
+layout: post
+title: Digital Photo Frame - PF1
+date: '2010-02-08T17:55:00.001+10:00'
+author: sacah
+tags:
+- project
+- hack
+modified_time: '2010-04-18T22:47:48.873+10:00'
+thumbnail: http://2.bp.blogspot.com/_-gckRFXob4c/S2-9yfYDwUI/AAAAAAAAAKg/pAnS31eaxWo/s72-c/pf1.jpg
+blogger_id: tag:blogger.com,1999:blog-4605009901196846959.post-6632795033784755742
+blogger_orig_url: http://www.sacah.net/2010/02/digital-photo-frame-pf1.html
+---
+
+We were given a digital photo frame a few years back, and haven't used it. So I figured rather than it go to waste I'd crack it open and see what was fun inside.<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_-gckRFXob4c/S2-9yfYDwUI/AAAAAAAAAKg/pAnS31eaxWo/s1600-h/pf1.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/_-gckRFXob4c/S2-9yfYDwUI/AAAAAAAAAKg/pAnS31eaxWo/s320/pf1.jpg" /></a></div><br /><br /><a name='more'></a><br /><br />Markings on the outside:<br />PF1070803084<br /><br />Digital Photo Frame<br />Model: PF1<br />Keycode: 41787335<br /><br />Inside I found a LCD screen and 2 PCBs, main PCB has following markings:<br />DPF-PF1 (SQ812B)<br />P/N: 5180341<br />2007-8-14<br />V0.1<br /><br />4 main chips on this PCB are:<br />SQ812B-Q<br />0730-QW08B4G2<br />H21028<br /><a href="http://www.sacah.net/SQ812B_DPF_ASICBrief_V1.0_2006Oct03.pdf">Brief</a><br /><br />EON<br />EN29LV040A-70JCCP<br />173C180<br />0731TDA<br /><a href="http://www.sacah.net/en29lv040a-512kb_flash.pdf">Datasheet</a><br /><br />ISSI<br />IS42S16400B-7TL<br />A1518000W 0723<br /><a href="http://www.sacah.net/is42s16400b-7tl-2mb_sdram.PDF">Datasheet</a><br /><br />VXIS<br />VX1826<br /><a href="http://www.sacah.net/VX1826_brief.pdf">Brief</a><br /><br />Things of interest:<br />1. Holes for USB, as I have time I'm tracing back where this goes to try and enable it, see if firmware will detect it.<br />2. CVBS and AGND markings for Composite video output.<br /><br />I will hopefully be getting a flash chip programmer soon, then I wanted to have a peak at what's stored in the flash, I'm hoping it's the firmware and I can have a poke around at that, though I haven't had much experience disassembling firmware so see how far I get (-:<br /><br />I'm also interested in VX1826, it supports I2C(IIC), might be able to use it as an easy I2C LCD screen.<br /><br />Let me know if you have any further information about any of these chips, or if you have one of these units and have successfully modified them at all, I'd love to hear from you.
