@@ -36,6 +36,9 @@
 
             ga('create', 'UA-56655493-1', 'auto');
             ga('send', 'pageview');
+            setInterval(function () {
+                ga('send', 'event', 'beacon', 'page', 'open');
+            }, 30000);
         </script>
     </body>
 
