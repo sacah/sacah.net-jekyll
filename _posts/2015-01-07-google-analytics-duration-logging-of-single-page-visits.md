@@ -34,7 +34,7 @@ Or the newer analytics.js code of
 ga('send', 'pageview');
 {% endhighlight %}
 
-The issue I have with this is it seems to create another pageview record, and there is no guarentee any requests will complete before the browser destroys your page, so depending on the users machine and network, the event may never reach Google to be recorded.
+The issue I have with this is it seems to create another pageview record, and there is no guarantee any requests will complete before the browser destroys your page, so depending on the users machine and network, the event may never reach Google to be recorded.
 
 In the future when more browsers support beacons this will be a great way to do it.
 
