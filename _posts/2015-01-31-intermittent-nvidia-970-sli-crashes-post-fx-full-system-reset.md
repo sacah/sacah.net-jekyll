@@ -24,4 +24,32 @@ I monitored voltages &amp; temperatures, all seemed normal, so as a last resort 
 
 I swapped the power cable so the second card was powered fully from the second 12v line and was able to run FurMark with Post-FX no problem.
 
+*Update*
+
+So it started crashing again, I was able to narrow it down to PSU. If I started the Pc after it had been off for 20min, I could run FurMark+PostFX no problem. Let the Pc warm up a bit and run FurMark+PostFX again after 15min and it would turn off.
+
+Ordered a new PSU, installed, no more Pc turning off with FurMark+PostFX.
+
+Some interesting stats on power draw, taken from the plug.
+
+<table class="graph-container">
+    <thead>
+        <tr>
+            <th colspan="6">Power Draw</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th>Watts</th>
+            <td>
+                <div class="graph-bar-hor graph-color-1" style="width: 100%"><span class="key">FurMark + PostFX + Prime95</span><span class="result">615</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 81%"><span class="key">FurMark + PostFX</span><span class="result">500</span></div>
+                <div class="graph-bar-hor graph-color-3" style="width: 81%"><span class="key">FurMark + Prime95</span><span class="result">500</span></div>
+                <div class="graph-bar-hor graph-color-1" style="width: 37%"><span class="key">Prime95</span><span class="result">230</span></div>
+                <div class="graph-bar-hor graph-color-2" style="width: 17%"><span class="key">Idle</span><span class="result">100</span></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 Hopefully this is helpful to someone else (-:
