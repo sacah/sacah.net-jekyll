@@ -33,7 +33,7 @@ The following variables have been chosen to assess their impact on fps, perceive
 | The amount of gpu memory used. 
 | The CPU's load and frequency (frequency is shown as a % of the CPU clock rate, which is at 4.4Ghz)
 
-~~~fold~~~
+thisisafold
 
 |---
 | **Test rig**

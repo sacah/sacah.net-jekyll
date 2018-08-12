@@ -16,7 +16,7 @@ Old fridge/freezer died, so we figured we'd get a larger one and hopefully not n
 
 The RF522WDRX4 was $700 something more expensive, and didn't really seem to offer anything better, so we settled on the E522BLE4 from Appliances Online.
 
-~~~fold~~~
+thisisafold
 
 Appliances Online were great, the website was fast and easy to use, they told me how many were in stock and when delivery could be before I placed an order and offered free delivery and removal of my old fridge. We got through to the customer service almost immediately when we rang to organise delivery, and the delivery occurred 2days later in the middle of their per-arranged 2hr delivery window, by friendly staff. This place has certainly got their business in order.
 

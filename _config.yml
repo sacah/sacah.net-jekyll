@@ -9,6 +9,11 @@ twitter_username: sacahnet
 github_username:  sacah
 permalink: /:year/:month/:title.html
 
+
+plugins:
+  - jekyll-paginate
+
+  
 # Build settings
 markdown: kramdown
 paginate: 10

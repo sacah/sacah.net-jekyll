@@ -13,6 +13,6 @@ While most things went smoothly for my upgrade to Windows 10, A-Tuning from ASRo
 
 Error 0xFFFE "This utility is not for this platform"
 
-~~~fold~~~
+thisisafold
 
 After some searching I couldn't find any answers, so I downloaded the Windows 7 version of A-Tuning and installed it in Compatability mode (Win 7), plus ran it in Win 7 compatability mode and it all runs fine now, controlling the fans is also working, so not sure why they can't release a Win 10 version.

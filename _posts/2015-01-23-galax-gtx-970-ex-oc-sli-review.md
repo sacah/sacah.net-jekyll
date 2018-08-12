@@ -12,7 +12,7 @@ modified_time: '2015-01-23T10:55:27.290Z'
 
 Recently upgraded from a GTX 770 to 2 GTX 970s. One concern I had was keeping the heat down to get the best performance, and most threads you read about SLI tell you to get a blower style cooler, although these give worse cooling results by themselves. I looked at my motherboard and case and figured I had enough room and airflow to take the risk, so after reading a ton of reviews I opted for 2 Galax GTX 970 EX OCs.
 
-~~~fold~~~
+thisisafold
 
 These are quite amazing cards, and an equally amazing price. I'd recommend you include these in your short list of which 970 to buy, check out all the in-depth reviews there are out there.
 

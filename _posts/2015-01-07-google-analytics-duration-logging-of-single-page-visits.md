@@ -14,7 +14,7 @@ So no doubt you are here because of Google Analytics showing you Avg Session Dur
 
 Google Analytics calculates a users time on your site (session duration) by comparing the time from the first page view to the second. This is fine for sites where people browser content, most of the views will be accurate. But for sites with a variety of information in single pages, like blogs, you may be like me and find people enter 1 page, find their answer and leave. But without knowing how long someone spent reading your page you don't really know if they took 1 look and figured it wasn't right for them, or if they spent 15min carefully reading everything.
 
-~~~fold~~~
+thisisafold
 
 ![100% Bounce Rate and 0 Second Visit Duration](/img/GoogleAnalytics0SecondAvgSessionDuration.png)
 

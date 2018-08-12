@@ -19,7 +19,7 @@ I recently needed to upload 2 LCOV files, and 2 JUnit XML files up to Sonar. The
 
 So I comment out the 'path' option for the second set, but then the LCOV file has the wrong path when it gets uploaded to Sonar, meaning Sonar doesn't count those coverage results.
 
-~~~fold~~~
+thisisafold
 
 What I ended up doing, was adding the full path to the 'prefix' option, and commenting out 'path'.
 

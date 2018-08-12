@@ -12,7 +12,7 @@ modified_time: '2014-10-22T08:33:32.653Z'
 
 My wife and I have been living in the apartment complex at 104 Miller st, Pyrmont, NSW for over 4 years now. We've split our time between a large 1 bedroom, and a 2 bedroom once our daughter came along.
 
-~~~fold~~~
+thisisafold
 
 The location is amazing, IGA across the road, post office, countless restraunts all within a few minutes walk. Darling Harbour is an easy 10min stroll and the city is a 15min walk. Busses to the Circular Quay and Central station are pretty much at the front door, as is the Light Rail stop.
 

@@ -13,7 +13,7 @@ Playing around with some mobile first, basic design using Jekyll and Github for 
 
 So I created a critical.scss file with my mobile first styles in it, and figured out the code below to include them in the head.html
 
-~~~fold~~~
+thisisafold
 
 {% highlight html %}
 {% raw %}{% capture critcss %}{% include critical.scss %}{% endcapture %}{% endraw %}

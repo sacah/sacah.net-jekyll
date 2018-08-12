@@ -22,7 +22,7 @@ I wanted to create a new directory that had the same structure of Photos, but al
 
 To accomplish this I tried a number of programs and scripts I found online for linux, but most didn't handle sub-directories, I then tried to find programs on Windows that would do this across the network, but they either didn't handle sub-directories or didn't handle errors in network traffic and would bomb out.
 
-~~~fold~~~
+thisisafold
 
 So I wrote my own Bash script
 

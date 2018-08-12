@@ -14,7 +14,7 @@ After upgrading to 2 Galax GTX 970 OC EX gpus and setting up SLI, I found that o
 
 This first heppened in BF4 and GW2, though it was hard to figure out exactly what the issue was, I tried various driver reinstalls, under-clocking, closing all background programs, even going back 3 versions of NVidia drivers, to no avail.
 
-~~~fold~~~
+thisisafold
 
 One way I found to consistently crash it was Geeks3D FurMark, setting Resolution to 5760x1080, Anti-aliasing to 8x MSAA and in the Settings, Dynamic background, Burn-in, Xtreme burn-in and Post-FX. It's the Post-FX that is what would cause it to crash.
 
